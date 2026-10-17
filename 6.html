@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form>
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        </p>
+        <p>
+            <label for="source">How did you find our site?</label><br>
+            <select id="source" name="source">
+                <option value="">Choose one</option>
+                <option value="search">Search engine</option>
+                <option value="social">Social media</option>
+                <option value="friend">Friend or family</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>Satisfaction level:</legend>
+            <label><input type="radio" name="satisfaction" value="1" required> 1</label>
+            <label><input type="radio" name="satisfaction" value="2"> 2</label>
+            <label><input type="radio" name="satisfaction" value="3"> 3</label>
+            <label><input type="radio" name="satisfaction" value="4"> 4</label>
+            <label><input type="radio" name="satisfaction" value="5"> 5</label>
+        </fieldset>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+</html>
